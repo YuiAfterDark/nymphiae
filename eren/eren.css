@@ -1,5 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Yellowtail);
-@import url(https://dl.dropboxusercontent.com/s/wly476d4xfkgz1b/topbar.css);
+/* eren by nymphiae 
+ * released: 2013-oct-13
+ * https://myanimelist.net/forum/?topicid=393503&show=50#msg25724825
+ * modified by Valerio Lyndon
+ * last update: 2022-aug-12
+ */
+
+@\import "https://fonts.googleapis.com/css?family=Yellowtail";
+@\import "https://dl.dropboxusercontent.com/s/wly476d4xfkgz1b/topbar.css";
 
 body
 {font-family: Calibri;
@@ -95,15 +102,15 @@ tr:hover [class^=td] a
 tr:hover [class^=td] .animetitle + small
 {color: #222222;}
 
-#grand_totals, #copyright
+#grand_totals, #copyright, #recaptcha-terms
 {border: 1px solid #9e0000;
 height: 20px;
 line-height: 20px;
 background-color: #222222;
 text-align: center;}
 
-#copyright
-{margin-bottom: 25px;}
+#recaptcha-terms
+{margin-bottom: 25px; margin-top: 10px;}
 
 #grand_totals
 {margin-top: 15px;}
