@@ -1,4 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Arimo);
+/* simple minimalist sidebar by nymphiae 
+ * released: 2014-05-07
+ * https://myanimelist.net/forum/?topicid=1167775
+ * modified by Valerio Lyndon
+ * last update: 2022-JUL-21
+ */
+
+@\import "https://fonts.googleapis.com/css?family=Arimo";
 
 a:hover, strong:hover
 {cursor: url(https://i.imgur.com/3Azd6PQ.png), progress !important;}
@@ -19,6 +26,7 @@ position: fixed !important;
 background-image: url(https://i.imgur.com/LVAZ8XI.png);
 background-repeat: no-repeat;
 background-position: center;
+background-size: cover;
 height: 178px;
 width: 150px;
 left: 150px !important;
@@ -26,9 +34,12 @@ top: 150px;
 z-index: 50;
 border: 5px solid #333;}
 
-#copyright
-{font-size: 9px;
-color: #333;}
+#copyright,
+#recaptcha-terms {
+	color: #333;
+	font-size: 9px;
+	text-align: center;
+}
 
 #copyright:hover::before
 {width: 150px;
@@ -60,47 +71,55 @@ transition: all 0.15s ease-out;}
 {text-decoration: none;
 color: #555;}
 
-.status_selected, .status_not_selected
-{display: block;
-position: fixed;
-width: 25px;
-height: 25px;
-left: 315px;
-background-color: transparent;
-background-repeat: no-repeat;
-background-position: top left;
-transition: all 0.6s ease-out;}
+[class^="status_"] a {
+	display: block;
+	position: fixed;
+	width: 25px;
+	height: 25px;
+	left: 315px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: top left;
+	font-size: 0px !important;
+	transition: all 0.6s ease-out;
+}
 
-.status_selected a, .status_not_selected a
-{width: 25px;
-height: 25px;
-display: block;
-font-size: 0px !important;
-color: transparent !important;
-transition: all 0.6s ease-out;}
+[class^="status_"] a[href*="status=1"] {
+	top: 159px;
+	background-image: url(https://i.imgur.com/4GKrMIE.png);
+}
+[class^="status_"] a[href*="status=1"][href*="/mangalist/"] {
+	background-image: url(https://i.imgur.com/BM3T9QZ.png);
+}
+[class^="status_"] a[href*="status=2"] {
+	top: 188px;
+	background-image: url(https://i.imgur.com/V3Ju6w4.png);
+}
+[class^="status_"] a[href*="status=3"] {
+	top: 217px;
+	background-image: url(https://i.imgur.com/ttxdiz0.png);
+}
+[class^="status_"] a[href*="status=4"] {
+	top: 246px;
+	background-image: url(https://i.imgur.com/3aKjdEt.png);
+}
+[class^="status_"] a[href*="status=6"] {
+	top: 275px;
+	background-image: url(https://i.imgur.com/yzIuFlV.png);
+}
+[class^="status_"] a[href*="status=7"] {
+	top: 304px;
+	background-image: url(https://i.imgur.com/A5jz5fc.png);
+}
+[class^="status_"] a[href*="status=7"][href*="/mangalist/"] {
+	background-image: url(https://i.imgur.com/UIwieiW.png);
+}
 
-.status_selected:first-of-type, .status_not_selected:first-of-type
-{top: 159px;
-background-image: url(https://i.imgur.com/4GKrMIE.png);}
-.status_selected:nth-of-type(2), .status_not_selected:nth-of-type(2)
-{top: 188px;
-background-image: url(https://i.imgur.com/V3Ju6w4.png);}
-.status_selected:nth-of-type(3), .status_not_selected:nth-of-type(3)
-{top: 217px;
-background-image: url(https://i.imgur.com/ttxdiz0.png);}
-.status_selected:nth-of-type(4), .status_not_selected:nth-of-type(4)
-{top: 246px;
-background-image: url(https://i.imgur.com/3aKjdEt.png);}
-.status_selected:nth-of-type(5), .status_not_selected:nth-of-type(5)
-{top: 275px;
-background-image: url(https://i.imgur.com/yzIuFlV.png);}
-.status_selected:last-of-type, .status_not_selected:last-of-type
-{top: 304px;
-background-image: url(https://i.imgur.com/A5jz5fc.png);}
-
-.status_selected:hover, .status_not_selected:hover, .status_selected a:hover, .status_not_selected a:hover
-{width: 84px;
-transition: all 0.6s ease-in;}
+.status_selected a:hover,
+.status_not_selected a:hover {
+	width: 84px;
+	transition: all 0.6s ease-in;
+}
 
 #list_surround
 {width: 600px;
@@ -302,9 +321,6 @@ background-color: #f5f5f5;}
 {border: 2px solid #f5f5f5;
 background-color: #333;}
 
-.status_selected:first-of-type, .status_not_selected:first-of-type
-{top: 159px;
-background-image: url(https://i.imgur.com/BM3T9QZ.png);}
-.status_selected:last-of-type, .status_not_selected:last-of-type
-{top: 304px;
-background-image: url(https://i.imgur.com/UIwieiW.png);}
+.grecaptcha-badge {
+	display: none !important;
+}
