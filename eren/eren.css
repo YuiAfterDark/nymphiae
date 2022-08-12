@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css?family=Yellowtail);
+@import url(https://dl.dropboxusercontent.com/s/wly476d4xfkgz1b/topbar.css);
+
+body
+{font-family: Calibri;
+font-weight: bold;
+font-size: 10px;
+color: #e3e3e3;
+text-transform: uppercase;
+background-image: url(https://dl.dropboxusercontent.com/s/88fy4b5vtxv7geg/bg.png);
+background-attachment: fixed;
+background-repeat: repeat;
+background-position: top left;}
+
+body:before
+{display: block !important;
+height: 300px;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: #fff;
+content: "";}
+
+#list_surround
+{position: absolute !important;
+margin: auto !important;
+right: 0px !important;
+left: 0px !important;
+width: 650px;
+z-index: 1;
+background-image: url(https://dl.dropboxusercontent.com/s/vs1qtohvi2skijo/eren.png);
+background-attachment: scroll;
+background-repeat: no-repeat;
+background-position: top center;
+background-size: auto 300px;
+padding-top: 300px;}
+
+#list_surround br
+{display: none;}
+
+.header_title
+{font-family: Yellowtail;
+font-size: 20px !important;
+text-transform: lowercase;
+font-weight: normal;
+color: #9e0000;
+text-align: center;
+border-bottom: solid 1px #9e0000;}
+
+
+.td1, .td2, .table_header, .category_totals
+{height: 20px;
+line-height: 20px;
+background-color: #222222;}
+
+.category_totals
+{text-align: center;}
+
+a
+{text-decoration: none;
+color: #c8c8c8;
+transition: all 0.3s ease-in-out;}
+
+a:hover
+{color: #9e0000;}
+
+.table_header:first-child, .table_header:last-child, td[class^='td']:first-child, td[class^='td']:last-child, .category_totals
+{border-style: solid !important;
+border-color: #9e0000 !important;}
+
+.table_header:first-child
+{border-width: 0 0 0 1px !important;}
+
+.table_header:last-child
+{border-width: 0 1px 0 0 !important;}
+
+td[class^='td']:first-child
+{border-width: 0 0 0 1px !important;}
+
+td[class^='td']:last-child
+{border-width: 0 1px 0 0 !important;}
+
+.category_totals
+{border-width: 0 1px 1px 1px !important;}
+
+tr:hover [class^=td]
+{color: #222222;
+background-color: #c8c8c8 !important;
+transition: all 0.3s ease-in-out;}
+
+tr:hover [class^=td] a
+{color: #9e0000;}
+
+tr:hover [class^=td] .animetitle + small
+{color: #222222;}
+
+#grand_totals, #copyright
+{border: 1px solid #9e0000;
+height: 20px;
+line-height: 20px;
+background-color: #222222;
+text-align: center;}
+
+#copyright
+{margin-bottom: 25px;}
+
+#grand_totals
+{margin-top: 15px;}
+
+td[class^='td'] div[style="float: right;"]
+{opacity: 0 !important;
+font-size: 0 !important;
+color: transparent;
+transition: .3s ease-in-out;}
+
+tr:hover [class^=td] div[style="float: right;"]
+{opacity: 1 !important;}
+
+td[class^='td'] div[style="float: right;"] small *:not(.List_LightBox)
+{display: none;}
+
+td[class^='td'] div[style="float: right;"] .List_LightBox
+{font-size: 10px !important;}
+
+.animetitle + small
+{font-size: 8px;
+color:#9e0000;}
+
+/* CATEGORY LINKS */
+
+td[class^='status_']
+{display: block !important;
+position: fixed;
+left: -105px;
+height: 20px;
+width: 120px;
+line-height: 20px;
+background-color: #222222;
+text-align: left;
+padding-left: 5px;
+transition: .3s ease-in-out;
+background-position: right;
+background-repeat: no-repeat;}
+
+td[class^='status_']:nth-of-type(1)
+{background-image: url(http://i.imgur.com/gC0HTKo.png) !important;
+bottom: 157px;}
+
+td[class^='status_']:nth-of-type(2)
+{background-image: url(http://i.imgur.com/JngPnBK.png) !important;
+bottom: 135px !important;}
+
+td[class^='status_']:nth-of-type(3)
+{background-image: url(http://i.imgur.com/YMqhknk.png) !important;
+bottom: 113px !important;}
+
+td[class^='status_']:nth-of-type(4)
+{background-image: url(http://i.imgur.com/bZeSfky.png) !important;
+bottom: 91px !important;}
+
+td[class^='status_']:nth-of-type(5)
+{background-image: url(http://i.imgur.com/OS71cZB.png) !important;
+bottom: 69px !important;}
+
+td[class^='status_']:nth-of-type(6)
+{background-image: url(http://i.imgur.com/7jsU7Tv.png) !important;
+bottom: 47px !important;}
+
+td[class^='status_']:hover
+{left: 0px !important;}
+
+td[class^='status_'] a
+{color: #ffffff;}
