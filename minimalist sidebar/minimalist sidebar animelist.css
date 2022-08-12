@@ -1,0 +1,303 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo);
+
+a:hover, strong:hover
+{cursor: url(https://i.imgur.com/3Azd6PQ.png), progress !important;}
+
+body
+{font-family: Arimo;
+font-size: 12px;
+text-transform: lowercase;
+letter-spacing: 0.1em;
+color: #333;
+background: url(https://i.imgur.com/3nfON39.png) repeat top left fixed;
+cursor: url(https://i.imgur.com/tj7CgDD.png), auto !important;}
+
+#mal_control_strip:after
+{content: "";
+display: block !important;
+position: fixed !important;
+background-image: url(https://i.imgur.com/LVAZ8XI.png);
+background-repeat: no-repeat;
+background-position: center;
+height: 178px;
+width: 150px;
+left: 150px !important;
+top: 150px;
+z-index: 50;
+border: 5px solid #333;}
+
+#copyright
+{font-size: 9px;
+color: #333;}
+
+#copyright:hover::before
+{width: 150px;
+height: auto !important;
+padding: 5px;
+font-size: 9px !important;
+color: #e5e5e5 !important;
+text-align: justify !important;
+background-image: none;
+transition: all 0.15s ease-in;}
+
+#copyright::before
+{content: "Design and coding by nymphiae.";
+display: block !important;
+font-size: 0px !important;
+color: transparent !important;
+position: fixed;
+width: 16px;
+height: 16px;
+bottom: 5px;
+right: 5px;
+background-color: #333;
+background-image: url(https://i.imgur.com/YVOu7eR.png);
+background-repeat: no-repeat;
+background-position: center;
+transition: all 0.15s ease-out;}
+
+#copyright a
+{text-decoration: none;
+color: #555;}
+
+.status_selected, .status_not_selected
+{display: block;
+position: fixed;
+width: 25px;
+height: 25px;
+left: 315px;
+background-color: transparent;
+background-repeat: no-repeat;
+background-position: top left;
+transition: all 0.6s ease-out;}
+
+.status_selected a, .status_not_selected a
+{width: 25px;
+height: 25px;
+display: block;
+font-size: 0px !important;
+color: transparent !important;
+transition: all 0.6s ease-out;}
+
+.status_selected:first-of-type, .status_not_selected:first-of-type
+{top: 159px;
+background-image: url(https://i.imgur.com/4GKrMIE.png);}
+.status_selected:nth-of-type(2), .status_not_selected:nth-of-type(2)
+{top: 188px;
+background-image: url(https://i.imgur.com/V3Ju6w4.png);}
+.status_selected:nth-of-type(3), .status_not_selected:nth-of-type(3)
+{top: 217px;
+background-image: url(https://i.imgur.com/ttxdiz0.png);}
+.status_selected:nth-of-type(4), .status_not_selected:nth-of-type(4)
+{top: 246px;
+background-image: url(https://i.imgur.com/3aKjdEt.png);}
+.status_selected:nth-of-type(5), .status_not_selected:nth-of-type(5)
+{top: 275px;
+background-image: url(https://i.imgur.com/yzIuFlV.png);}
+.status_selected:last-of-type, .status_not_selected:last-of-type
+{top: 304px;
+background-image: url(https://i.imgur.com/A5jz5fc.png);}
+
+.status_selected:hover, .status_not_selected:hover, .status_selected a:hover, .status_not_selected a:hover
+{width: 84px;
+transition: all 0.6s ease-in;}
+
+#list_surround
+{width: 600px;
+position: absolute;
+left: 460px;
+top: 0px;
+margin-bottom: 10px;
+cursor: url(https://i.imgur.com/BPUsYhB.png), auto !important;}
+
+#mal_cs_listinfo strong a,
+#mal_cs_links div:last-of-type a:first-of-type,
+#mal_cs_links div:last-of-type a:last-of-type,
+#mal_cs_otherlinks div:last-of-type a:first-of-type,
+#mal_cs_otherlinks div:last-of-type a:nth-of-type(2),
+#mal_cs_otherlinks div:last-of-type a:last-of-type
+{display: block;
+height: 25px;
+width: 25px;
+position: fixed;
+font-size: 0px !important;
+color: transparent !important;
+background-color: #333;
+z-index: 10;
+left: 120px;
+background-position: center;
+background-repeat: no-repeat;
+transition: all 0.6s ease-out;}
+#mal_cs_otherlinks div:last-of-type a:first-of-type,
+#mal_cs_otherlinks div:last-of-type a:nth-of-type(2),
+#mal_cs_otherlinks div:last-of-type a:last-of-type
+{z-index: 5 !important}
+
+#mal_cs_listinfo strong a, #mal_cs_otherlinks div:last-of-type a:first-of-type
+{top: 202px;}
+#mal_cs_links div:last-of-type a:first-of-type, #mal_cs_otherlinks div:last-of-type a:nth-of-type(2)
+{top: 231px;}
+#mal_cs_links div:last-of-type a:last-of-type, #mal_cs_otherlinks div:last-of-type a:last-of-type
+{top: 260px;}
+
+#mal_cs_listinfo strong a
+{background-image: url(https://i.imgur.com/OuEAqLM.png);}
+#mal_cs_links div:last-of-type a:first-of-type
+{background-image: url(https://i.imgur.com/6YWS93P.png);}
+#mal_cs_links div:last-of-type a:last-of-type
+{background-image: url(https://i.imgur.com/M9al2Pp.png);}
+#mal_cs_otherlinks div:last-of-type a:first-of-type
+{background-image: url(https://i.imgur.com/rbAUTgW.png);}
+#mal_cs_otherlinks div:last-of-type a:nth-of-type(2)
+{background-image: url(https://i.imgur.com/95F33Qg.png);}
+#mal_cs_otherlinks div:last-of-type a:last-of-type
+{background-image: url(https://i.imgur.com/5QkEfgo.png);}
+
+#mal_cs_listinfo strong a:hover,
+#mal_cs_links div:last-of-type a:first-of-type:hover,
+#mal_cs_links div:last-of-type a:last-of-type:hover,
+#mal_cs_otherlinks div:last-of-type a:first-of-type:hover,
+#mal_cs_otherlinks div:last-of-type a:nth-of-type(2):hover,
+#mal_cs_otherlinks div:last-of-type a:last-of-type:hover
+{background-color: #777;
+transition: all 0.6s ease-in;}
+
+#mal_cs_listinfo div:last-of-type,
+#mal_cs_links a[href="/"],
+#mal_cs_otherlinks div:first-of-type,
+#mal_cs_powered,
+#mal_cs_pic img
+{display: none;
+font-size: 0px !important;
+color: transparent;}
+#mal_control_strip
+{height: 0px !important;
+width: 1px !important;
+background: none !important;}
+#mal_control_strip td
+{border: none;}
+#mal_cs_otherlinks div:last-of-type
+{font-size: 0px !important;
+color: transparent;}
+#mal_cs_pic a, #mal_cs_links a.List_LightBox
+{visibility: hidden !important;}
+
+.category_totals
+{text-align: center; letter-spacing: 0; text-shadow: 1px 1px 1px rgba(0,0,0,1); color: #fff;}
+.table_header, .table_headerLink
+{letter-spacing: 0; text-shadow: 1px 1px 1px rgba(0,0,0,1); color: #fff;}
+
+#grand_totals
+{position: fixed;
+height: 168px;
+width: 150px;
+top: 155px;
+left: 155px;
+color: transparent;
+background-color: rgba(0,0,0,0);
+white-space: pre-line;
+text-align: center;
+z-index: 55;
+padding-top: 10px;
+transition: all 0.7s ease-out;}
+
+#grand_totals:hover
+{color: #f5f5f5;
+background-color: rgba(0,0,0,0.65);
+transition: all 0.7s ease-in;}
+
+#grand_totals::before
+{content: "grand totals";
+display: block;
+padding-bottom: 5px;}
+
+#list_surround br
+{display: none;}
+
+td br
+{display: inline !important;}
+
+.header_cw,
+.header_completed,
+.header_onhold,
+.header_dropped,
+.header_all
+{margin-top: 25px;
+letter-spacing: -0.1em;
+text-transform: uppercase;
+font-size: 30px;
+text-align: center;
+font-weight: 700;}
+
+.header_ptw
+{font-size: 0px !important;
+margin-top: 25px;
+text-transform: uppercase;
+text-align: center;
+font-weight: 700;}
+.header_ptw::before
+{content: "planned";
+font-size: 30px;
+letter-spacing: -0.1em;}
+
+td div[style="float: right;"]
+{opacity: 0 !important;
+transition: all 0.45s ease-out;}
+tr:hover [class^=td] div[style="float: right;"]
+{opacity: 1 !important;
+transition: all 0.45s ease-in;}
+tr:hover [class^=td]
+{background-color: rgba(0,0,0,0.015);
+transition: all 0.45s ease-in;}
+tr [class^=td]
+{transition: all 0.45s ease-out;}
+
+.td1, .td2
+{height: 16px;
+background-color: rgba(0,0,0,0.055);}
+
+a
+{text-decoration: none;
+font-style: italic;
+color: #333;}
+
+strong, b
+{font-weight: normal !important;}
+
+.table_header, .category_totals
+{height: 18px;
+background-color: rgba(0,117,117,0.47);}
+
+.borderRBL
+{padding-left: 30px;}
+
+.animetitle + small
+{color: #259595;}
+.animetitle + small::before, .animetitle + small::after
+{content: "~";}
+.animetitle
+{text-shadow: 1px 1px 1px rgba(255,255,255,1);}
+
+#inlineContent
+{display:inline-block !important;
+height: 100% !important;
+width: 100% !important;
+left:0 !important;
+right:0 !important;
+top:0 !important;
+margin:auto !important !important;
+position:fixed !important;
+z-index:-1 !important;
+cursor: url(https://i.imgur.com/0VgTfJe.png), auto !important;}
+
+a[title="Click to increase your watched ep number by one"]
+{float: right;
+padding-right: 5px;}
+
+::-webkit-scrollbar
+{height: 7px;
+width: 7px;
+background-color: #f5f5f5;}
+::-webkit-scrollbar-thumb
+{border: 2px solid #f5f5f5;
+background-color: #333;}
