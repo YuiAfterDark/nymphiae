@@ -2,13 +2,13 @@
  * released: 2014-05-07
  * https://myanimelist.net/forum/?topicid=1167775
  * modified by Valerio Lyndon
- * last update: 2022-JUL-21
+ * last update: 2022-AUG-12
  */
 
 @\import "https://fonts.googleapis.com/css?family=Arimo";
 
 a:hover, strong:hover
-{cursor: url(https://i.imgur.com/3Azd6PQ.png), progress !important;}
+{cursor: url(https://i.imgur.com/3Azd6PQ.png), pointer !important;}
 
 body
 {font-family: Arimo;
@@ -127,7 +127,7 @@ position: absolute;
 left: 460px;
 top: 0px;
 margin-bottom: 10px;
-cursor: url(https://i.imgur.com/BPUsYhB.png), auto !important;}
+cursor: url(https://i.imgur.com/tj7CgDD.png), auto !important;}
 
 #mal_cs_listinfo strong a,
 #mal_cs_links div:last-of-type a:first-of-type,
@@ -307,7 +307,7 @@ top:0 !important;
 margin:auto !important !important;
 position:fixed !important;
 z-index:-1 !important;
-cursor: url(https://i.imgur.com/0VgTfJe.png), auto !important;}
+cursor: url(https://i.imgur.com/tj7CgDD.png), auto !important;}
 
 a[title="Click to increase your watched ep number by one"]
 {float: right;
