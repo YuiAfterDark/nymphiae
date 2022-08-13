@@ -5,5 +5,6 @@ nymphiae is a list designer on MyAnimeList. This repository's purpose is to prev
 ## User links:
 
 - https://myanimelist.net/profile/nymphiae
+- https://shirousagithemes.tumblr.com
 - http://shirousagi.netii.net (broken link, sadly)
 - https://web.archive.org/web/20200301000000*/shirousagi.netii.net/
