@@ -1,0 +1,383 @@
+/*
+--------------------------------------------------------------------------------
+___ _ _ ___ ___ ___ _ _ ___ _ ___ ___ _____ _ _ ___ __ __ ___ ___
+/ __| || |_ _| _ / _ | | | / __| /_ / __|_ _| |_ _| || | __| / | __/ __|
+__ __ || || / (_) | |_| __ / _ (_ || | | | | __ | _|| |/| | _|__
+|___/_||_|___|_|_\___/ ___/|___/_/ ____|___| |_| |_||_|___|_| |_|___|___/
+
+- ☂ LAYOUT NO.7 : ENDLESS RIVER;. ----------------------------------------------
+-- ☂ DESIGN AND CODING BY NYMPHIAE (SHIROUSAGITHEMES). -------------------------
+--- ☂ FONTS: RALEWAY, ARIMO. ---------------------------------------------------
+---- ☂ ART: TOFUVI@TUMBLR. -----------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+@\import "https://fonts.googleapis.com/css?family=Raleway:400,300|Arimo:400,400italic,700,700italic";
+
+body
+{background: #f5f5f5;
+color: #404040;
+font-family: "Arimo", sans-serif;
+font-size: 10pt;
+cursor: url(https://i.imgur.com/jFvhoac.png), auto;}
+
+body:before
+{content: "";
+display: block;
+height: 100%;
+width: 1px;
+background: #d4d4d4;
+position: fixed;
+top: 0;
+left: 383px;}
+
+a
+{cursor: url(https://i.imgur.com/Xmgf341.png), auto;}
+
+a, strong, b
+{color: #404040;
+text-decoration: none;}
+
+#mal_control_strip a, #mal_control_strip strong, #mal_control_strip b
+{text-decoration: none !important;
+font-weight: normal !important;}
+
+#list_surround
+{width: 650px;
+padding: 25px;
+left: 384px;
+position: relative;
+top: 75px;
+bottom: 0;}
+
+#list_surround br, #mal_cs_pic img
+{display: none;}
+
+#list_surround table[align="center"]:first-of-type
+{position: fixed;
+display: block;
+height: 75px;
+width: 959px;
+top: 0px;
+left: 125px;
+background: #f5f5f5;
+border-bottom: 1px solid #d4d4d4;
+box-sizing: border-box;
+padding: 0 0 0 258px;
+z-index: 10;}
+
+td[class^="status_"]
+{text-align: left;
+width: auto;
+padding: 41px 25px 0 0;
+height: 75px;
+vertical-align: top;
+box-sizing: border-box;}
+
+td[class^="status_"]:first-of-type
+{padding: 41px 25px 0 26px;
+border-left: 1px solid #d4d4d4;}
+
+td[class^="status_"] a
+{text-transform: uppercase;
+font-size: 7pt;
+letter-spacing: 0.15em;
+transition: .75s;
+text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);}
+
+td[class^="status_"] a:hover
+{color: #1cc6c6;}
+
+.status_selected
+{font-weight: 700 !important;}
+
+.header_title
+{font-size: 12pt;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+text-align: center;
+font-family: "Raleway", sans-serif;
+color: #00aaaa;
+border-width: 1px 1px 0 1px;
+border-style: solid;
+border-color: #d4d4d4;
+padding-top: 2px;
+background: #f0f0f0;
+text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);}
+
+.category_totals
+{display: block;
+border-width: 0 1px 1px 1px;
+border-style: solid;
+border-color: #d4d4d4;
+margin-bottom: 25px;
+text-transform: uppercase;
+font-size: 7pt;
+letter-spacing: 0.075em;
+text-align: center;
+padding: 5px 0;
+background: #f0f0f0;
+text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);}
+
+#grand_totals
+{font-size: 7pt;
+color: #00aaaa;
+font-weight: 700;
+text-transform: uppercase;
+font-style: italic;
+border: 1px solid #d4d4d4;
+background: #f0f0f0;
+text-align: center;
+height: 25px;
+line-height: 25px;
+margin-bottom: 25px;}
+
+td[class^="td"]
+{line-height: 11pt;}
+
+td[class^="td"], .table_header
+{background: #f0f0f0;}
+
+td[class^="td"]:first-of-type, .table_header:first-of-type
+{border-left: 1px solid #d4d4d4;}
+
+td[class^="td"]:last-of-type, .table_header:last-of-type
+{border-right: 1px solid #d4d4d4;}
+
+tr:hover td[class^="td"], tr:hover td[class^="td"] a
+{color: #00aaaa;
+transition: .75s;}
+
+a[onclick*="update"]
+{opacity: 0;
+position: absolute;
+padding-left: 2px;}
+
+tr:hover a[onclick*="update"]
+{opacity: 1;
+transition: .75s;}
+
+.table_headerLink, .table_headerLink strong, .table_header strong
+{line-height: 10pt;
+font-size: 7pt;
+text-transform: uppercase;
+letter-spacing: 0.075em;
+font-weight: normal;}
+
+.animetitle
+{padding-left: 0;}
+
+tr:hover .animetitle
+{padding-left: 4px;}
+
+#list_surround small
+{line-height: 7pt;
+font-size: 7pt;
+text-transform: uppercase;
+letter-spacing: 0.15em;}
+
+.animetitle + small
+{position: relative;
+top: -1px;}
+
+.animetitle + small:before
+{content: "[";}
+
+.animetitle + small:after
+{content: "]";}
+
+div[style="float: right;"]
+{float: left !important;
+padding: 3px 0 0 0;
+font-size: 0 !important;
+color: transparent !important;
+text-transform: uppercase;
+height: 15px;
+width: 0px !important;
+overflow: hidden !important;
+opacity: 0;
+transition: .75s;
+box-sizing: border-box;
+text-align: center;}
+
+div[style="float: right;"] small a:first-of-type
+{font-size: 7pt !important;
+color: #404040 !important;
+padding-left: 4px;}
+
+div[style="float: right;"] small a:last-of-type
+{display: none;}
+
+tr:hover div[style="float: right;"]
+{width: 34px !important;
+opacity: 1;}
+
+#mal_control_strip
+{position: fixed;
+width: 208px !important;
+top: 328px;
+left: 150px !important;
+background: none !important;
+border: 1px solid #d4d4d4;
+text-align: center;}
+
+#mal_control_strip *
+{font-family: "Arimo", sans-serif !important;
+text-shadow: 1px 1px 0px #FFF;
+font-size: 7pt !important;
+text-transform: uppercase !important;
+color: #404040 !important;}
+
+#mal_control_strip a, #mal_control_strip a strong
+{color: #00aaaa !important;
+letter-spacing: 0;
+transition: .5s;}
+
+#mal_control_strip a:hover, #mal_control_strip a strong:hover
+{letter-spacing: 0.15em;}
+
+#mal_control_strip td
+{display: block;
+height: auto !important;
+box-sizing: border-box;
+padding: 0 !important;
+width: 206px;
+border-style: solid;
+border-color: #fff;
+border-width: 0 3px 0 3px;
+background-color: #ebebeb;}
+
+#mal_control_strip td:first-of-type
+{border-top-width: 3px;}
+
+#mal_cs_otherlinks
+{border-bottom-width: 3px !important;}
+
+#mal_control_strip td div
+{margin: 0 !important;}
+
+#mal_cs_otherlinks div:last-of-type, #mal_cs_otherlinks div:last-of-type span, #mal_cs_links div
+{font-size: 0 !important;}
+#mal_cs_otherlinks div:last-of-type a, #mal_cs_links div a
+{display: block;}
+
+#mal_cs_otherlinks div:first-of-type strong
+{font-size: 0 !important;}
+
+#mal_cs_otherlinks div:first-of-type strong a:after
+{content: "'s profile"}
+
+#mal_cs_otherlinks div:first-of-type strong a
+{text-decoration: }
+
+#mal_cs_powered, #mal_cs_pic img
+{display: none !important;}
+
+#copyright:after
+{display: block;
+position: fixed;
+width: 208px;
+left: 150px;
+top: 34px;
+content: "menu";
+font-size: 12pt;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+text-align: center;
+font-family: "Raleway", sans-serif;
+color: #00aaaa;
+text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+z-index: 20;}
+
+#mal_control_strip:after
+{display: block;
+content: "";
+box-sizing: border-box;
+position: fixed;
+top: 297px;
+left: 247px;
+width: 13px;
+height: 13px;
+transform: rotate(-45deg);
+border-width: 0 0 1px 1px;
+border-style: solid;
+border-color: #00aaaa;
+background-color: #f5f5f5;}
+
+#mal_cs_otherlinks:before
+{display: block;
+content: "";
+box-sizing: border-box;
+position: fixed;
+top: 101px;
+left: 151px;
+width: 206px;
+height: 186px;
+border: 3px solid #fff;
+background-color: #ffffff;
+z-index: 5;
+background-image: url(https://i.imgur.com/AYXheL4.png) !important;
+background-position: center;
+background-repeat: no-repeat;
+transition: .75s;
+background-size: cover;}
+
+#mal_cs_otherlinks:after
+{display: block;
+content: "";
+box-sizing: border-box;
+position: fixed;
+top: 100px;
+left: 150px;
+width: 208px;
+height: 188px;
+border: 1px solid #d4d4d4;
+background-color: transparent;}
+
+#copyright
+{font-size: 7pt;
+text-transform: uppercase;
+margin-top: 0 !important;}
+
+#copyright:before
+{display: block;
+box-sizing: content-box;
+position: fixed;
+top: 104px;
+left: 154px;
+width: 200px;
+height: 60px;
+padding: 60px 0;
+white-space: pre;
+content: "layout no.7 : endless river, \a courtesy of shirousagi themes. \a design and coding by nymphiae. \a art by tofuvi@tumblr. \a for code and more information \a visit shirousagi.god.jp";
+font-size: 7pt;
+text-transform: uppercase;
+font-weight: 700;
+background: rgba(255,255,255,.65);
+z-index: 50;
+transform: rotateY(180deg);
+opacity: 0;
+transition: .75s;}
+
+#copyright:hover:before
+{opacity: 1;
+transform: rotateY(0deg);}
+
+::-webkit-scrollbar
+{height: 9px;
+width: 9px;
+background-color: #d4d4d4;
+border: 4px solid #f5f5f5;}
+::-webkit-scrollbar-thumb
+{border: 4px solid transparent;
+background-clip: padding-box;
+background-color: #38c6c6;}
+
+::-moz-selection
+{color: #fff;
+background: #38c6c6;
+text-shadow: none;}
+::selection
+{color: #fff;
+background: #38c6c6;
+text-shadow: none;}
