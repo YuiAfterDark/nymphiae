@@ -1,0 +1,37 @@
+/* OVERALL BACKGROUND IMAGE */
+body
+{background-image: url(https://dl.dropboxusercontent.com/s/a3zy6p69rsqy453/gradient-blue.jpg);}
+
+/* ICON IMAGE */
+#mal\_control_strip:before
+{background-image: url(https://dl.dropboxusercontent.com/s/2i16qqm287trbpw/anime_icon_by_meteora94-aqua.png);}
+
+/* COLORS */
+
+::-webkit-scrollbar-thumb
+{background-color: hsla(162,50%,80%,1);}
+
+::-moz-selection, ::selection
+{background: hsla(162,50%,70%,1);}
+
+#list_surround, #mal\_cs_pic:after, #mal\_cs_links:after
+{border-color: hsla(162,50%,60%,1);}
+
+a,
+.table_header,
+.table_headerLink,
+#mal\_cs_links a.List_LightBox:hover,
+#mal\_cs_links a[href^="/animelist/"]:hover,
+#mal\_cs_links a[href^="/mangalist/"]:hover
+{color: hsla(162,46%,52%,1);}
+
+.category_totals, tr:hover td[class^="td"]
+{background-color: hsla(162,100%,89%,1);}
+
+#mal\_cs_links a.List_LightBox:before,
+#mal\_cs_links a[href^="/animelist/"]:before,
+#mal\_cs_links a[href^="/mangalist/"]:before,
+#mal\_cs_links a.List_LightBox:after,
+#mal\_cs_links a[href^="/animelist/"]:after,
+#mal\_cs_links a[href^="/mangalist/"]:after
+{background-color: hsla(162,46%,52%,1);}
