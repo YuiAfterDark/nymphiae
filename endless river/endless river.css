@@ -12,6 +12,8 @@ __ __ || || / (_) | |_| __ / _ (_ || | | | | __ | _|| |/| | _|__
 --------------------------------------------------------------------------------
 */
 
+/* Modified by Valerio Lyndon 2022-aug-12 */
+
 @\import "https://fonts.googleapis.com/css?family=Raleway:400,300|Arimo:400,400italic,700,700italic";
 
 body
@@ -334,8 +336,10 @@ height: 188px;
 border: 1px solid #d4d4d4;
 background-color: transparent;}
 
-#copyright
+#copyright,
+#recaptcha-terms
 {font-size: 7pt;
+text-align: center;
 text-transform: uppercase;
 margin-top: 0 !important;}
 
