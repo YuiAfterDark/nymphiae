@@ -1,0 +1,353 @@
+ /* -----------------------------------------------------------------------------
+  ___ _  _ ___ ___  ___  _   _ ___   _   ___ ___   _____ _  _ ___ __  __ ___ ___
+ / __| || |_ _| _ \/ _ \| | | / __| /_\ / __|_ _| |_   _| || | __|  \/  | __/ __|
+ \__ \ __ || ||   / (_) | |_| \__ \/ _ \ (_ || |    | | | __ | _|| |\/| | _|\__ \
+ |___/_||_|___|_|_\\___/ \___/|___/_/ \_\___|___|   |_| |_||_|___|_|  |_|___|___/
+  
+ --------------------------------------------------------------------------------
+ - ☂ LAYOUT NO.8 : モノクロ;. ------------------------------------------------------
+ -- ☂ DESIGN AND CODING BY NYMPHIAE (SHIROUSAGITHEMES). -------------------------
+ --- ☂ FONTS: ARCHIVO NARROW, DEJAVU SANS. --------------------------------------
+ ---- ☂ ORIGINALLY INSPIRED BY UDONYA@TUMBLR ------------------------------------
+ ----------------------------------------------------------------------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700);
+@font-face {
+    font-family: 'DejaVu Sans';
+    src: url('https://dl.dropboxusercontent.com/s/bbybagcjimwka61/DejaVuSans.eot');
+    src: url('https://dl.dropboxusercontent.com/s/bbybagcjimwka61/DejaVuSans.eot#iefix') format('embedded-opentype'),
+         url('https://dl.dropboxusercontent.com/s/nkclvxjv1p5cpdn/DejaVuSans.woff') format('woff'),
+         url('https://dl.dropboxusercontent.com/s/myemqth814xiljm/DejaVuSans.ttf') format('truetype'),
+         url('https://dl.dropboxusercontent.com/s/neo0gc1ryj542un/DejaVuSans.svg#dejavu_sans') format('svg');
+}
+
+::-webkit-scrollbar
+{width: 5px;
+height: 5px;}
+
+::-webkit-scrollbar-thumb
+{background-color: #000;
+border: 1px solid #fff;}
+
+::-webkit-scrollbar-track
+{background-color: #000;
+box-shadow: inset 0 0 0px 2px #fff;}
+
+:focus
+{outline-color: transparent;
+outline-style: none;}
+
+*
+{font-family: Archivo Narrow, DejaVu Sans !important;
+text-decoration: none !important;}
+
+body
+{font-size: 11pt;
+color: #000;
+background: #000 url(https://dl.dropboxusercontent.com/s/j5wr3jtlei4jiw8/bg-trans-100.png) repeat fixed center;}
+
+a
+{color: #000;
+transition: .5s;}
+
+#list_surround
+{width: 600px;
+position: absolute;
+left: 0;
+right: 0;
+margin: auto;
+background-color: #fff;
+padding: 0 20px;
+box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);}
+
+#list_surround br
+{display: none;}
+
+td[class^="td"]
+{height: 23px;
+transition: .5s;}
+
+td[class^="td"] div[style="float: right;"]
+{opacity: 0;
+font-size: 0pt;
+text-transform: lowercase;
+transition: .5s;}
+
+td[class^="td"] div[style="float: right;"] a
+{display: inline-block;
+vertical-align: top;
+margin-top: 2px;
+width: 26px;
+height: 13px;
+border: 1px solid #000;
+line-height: 13px;
+white-space: nowrap;
+text-align: center;
+text-transform: lowercase;
+font-size: 8pt;}
+
+td[class^="td"] div[style="float: right;"] a:last-of-type
+{margin-left: 3px;}
+
+.category_totals
+{height: 21px;
+line-height: 19px;
+background-color: #000;
+color: #fff;
+text-transform: lowercase;
+font-size: 8pt;
+text-align: center;
+display: block;
+box-sizing: border-box;
+border-top: 3px solid #fff;}
+
+.borderRBL
+{line-height: 9pt !important;
+background-color: #000;
+color: #fff;
+text-transform: lowercase;
+font-size: 8pt;
+padding: 0 10px 10px 10px;
+border: 10px solid #fff !important;}
+
+.borderRBL a
+{color: #fff;}
+.borderRBL a[href*="id="]
+{border-bottom: 1px dotted #fff;}
+
+.borderRBL br
+{display: block !important;}
+
+.borderRBL:before
+{content: "";
+display: block;
+height: 12px;
+width: 12px;
+transform: rotate(45deg);
+position: relative;
+top: -6px;
+left: 10px;
+background-color: #000;}
+
+.header_title
+{text-transform: lowercase;
+letter-spacing: 0.5em !important;
+text-align: center;
+padding: 10px;
+border-bottom: 1px solid #000;}
+
+.table_header
+{height: 23px;}
+
+.table_header *
+{font-weight: normal;}
+
+#grand_totals
+{text-transform: lowercase;
+font-size: 9pt;
+background-color: #fff;
+color: #000;
+border: 1px solid #000;
+letter-spacing: 0.2em;
+text-align: center;
+padding: 3px;
+margin-top: 15px;}
+
+.animetitle
+{display: inline-block;
+vertical-align: top;
+margin: 1px 0 0 2px;
+max-width: 271px;
+height: 17px;
+line-height: 17px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;}
+
+.animetitle + small
+{display: inline-block;
+vertical-align: top;
+margin: 2px 0 0 2px;
+height: 13px;
+border: 1px solid #000;
+padding: 0 2px;
+line-height: 13px;
+white-space: nowrap;
+text-transform: lowercase;
+font-size: 8pt;}
+	
+#copyright
+{text-transform: lowercase;
+font-size: 10pt;}
+
+#copyright:after
+{content: "layout no.8 : モノクロ \00A9  nymphiae (shirousagithemes)";
+display: block;
+margin-bottom: 15px;
+font-family: Archivo Narrow, Meiryo, Osaka;}
+
+tr:hover td[class^="td"] div[style="float: right;"]
+{opacity: 1;}
+tr:hover td[class^="td"]:not(.borderRBL)
+{background-color: #000;
+color: #fff;}
+tr:hover td[class^="td"]:not(.borderRBL) a
+{color: #fff;}
+tr:hover td[class^="td"] div[style="float: right;"] a, tr:hover .animetitle + small
+{border-color: #fff;}
+
+
+/* ------------------------------- */
+
+#copyright:before
+{content: "";
+display: block;
+width: 100%;
+height: 40px;
+background-color: #000;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 10;}
+
+#mal_control_strip
+{width: 100%;
+    padding: 0;
+    margin: 0;
+    left: 0;}
+
+#mal_control_strip, #mal_control_strip td
+{background: none !important;
+border: 0 !important;}
+
+#mal_cs_powered a, #searchListButton, #mal_cs_listinfo form,
+#mal_control_strip .List_LightBox, #mal_cs_links div:last-of-type, a[href="/forum/"]
+#mal_cs_pic a img, #mal_cs_otherlinks div:first-of-type, a[href="/register.php"],
+a[href*="forum/?topic"], #mal_cs_otherlinks a[href*="list"], #mal_cs_otherlinks a[href*="export"],
+#mal_cs_otherlinks a[href*="history"], a[href*="shared"], span[title="Compatibility Score"]
+{visibility: hidden;}
+
+#mal_cs_links a[href="/"], #mal_cs_listinfo a[href*="profile"]:before, #mal_cs_pic a:after, a[href*="login"], a[href="/register.php"]:after, #mal_control_strip .List_LightBox:before
+{display: block;
+line-height: 19px;
+height: 22px;
+border: 1px solid #fff;
+position: fixed;
+top: 9px;
+left: 0%;
+margin: auto;
+color: #fff;
+font-size: 9pt !important;
+text-transform: lowercase !important;
+padding: 0 3px;
+text-align: center;
+box-sizing: border-box;
+visibility: visible;
+z-index: 99;
+transition: .5s;}
+
+#mal_cs_links a[href="/"]:hover, #mal_cs_listinfo a[href*="profile"]:hover:before, #mal_cs_pic a:hover:after, a[href*="login"]:hover, a[href="/register.php"]:hover:after, #mal_control_strip .List_LightBox:hover:before,
+#searchBox:hover, #searchBox:focus, td[class^="status_"] a:hover, td[class^="td"] div[style="float: right;"] a:hover
+{background-color: rgba(255,255,255,.15) !important;}
+
+#mal_cs_links a[href="/"], #mal_cs_pic a:after
+{content: "home";
+width: 35px;
+left: calc((100% - 640px)/2 + 20px);}
+
+#mal_cs_listinfo a[href*="profile"]
+{color: transparent;
+font-size: 0pt;}
+
+#mal_cs_listinfo a[href*="profile"]:before, a[href*="login"]
+{content: "profile";
+color: #fff;
+font-size: 9pt;
+width: 38px;
+left: calc((100% - 640px)/2 + 64px);}
+
+a[href="/register.php"]:after
+{content: "register";
+width: 46px;
+left: calc((100% - 640px)/2 + 111px);}
+
+#mal_control_strip .List_LightBox:before
+{content: "add";
+width: 30px;
+left: calc((100% - 640px)/2 + 111px);}
+
+#searchBox
+{width: 150px !important;
+height: 22px;
+line-height: 20px;
+border: 1px solid #fff;
+color: #fff;
+background-color: transparent;
+position: fixed;
+top: 9px;
+right: 0%;
+right: calc((100% - 640px)/2 + 20px);
+margin: auto;
+padding: 0;
+text-indent: 5px;
+text-transform: lowercase;
+font-size: 9pt !important;
+box-sizing: border-box;
+z-index: 99;
+transition: .5s;}
+
+td[class^="status_"] a
+{font-size: 0pt;
+text-transform: lowercase;
+display: block;
+width: 22px;
+height: 22px;
+border: 1px solid #fff;
+position: fixed;
+top: 9px;
+right: 0%;
+margin: auto;
+background-repeat: no-repeat;
+background-position: center;
+box-sizing: border-box;
+z-index: 99;
+transition: .5s;}
+
+td[class^="status_"]:first-of-type a
+{background-image: url(https://dl.dropboxusercontent.com/s/11oe0zzct0nx5xb/progress.png);
+right: calc((100% - 640px)/2 + 334px);}
+
+td[class^="status_"]:nth-of-type(2) a
+{background-image: url(https://dl.dropboxusercontent.com/s/hcwign5xhdy84il/finished.png);
+right: calc((100% - 640px)/2 + 303px);}
+
+td[class^="status_"]:nth-of-type(3) a
+{background-image: url(https://dl.dropboxusercontent.com/s/xwdzpyjwio9snus/hold.png);
+right: calc((100% - 640px)/2 + 272px);}
+
+td[class^="status_"]:nth-of-type(4) a
+{background-image: url(https://dl.dropboxusercontent.com/s/4zvjfhj1av0h1fy/drop.png);
+right: calc((100% - 640px)/2 + 241px);}
+
+td[class^="status_"]:nth-of-type(5) a
+{background-image: url(https://dl.dropboxusercontent.com/s/nhpn4pg6z78skjn/plan.png);
+right: calc((100% - 640px)/2 + 210px);}
+
+td[class^="status_"]:last-of-type a
+{background-image: url(https://dl.dropboxusercontent.com/s/7gvm3yqqh1esd6g/all.png);
+right: calc((100% - 640px)/2 + 179px);}
+
+a[onclick*="update"]
+{opacity: 0;
+position: absolute;
+padding-left: 3px;
+font-size: 12pt;
+font-family: Consolas, monospace !important;
+line-height: 18px;}
+
+tr:hover a[onclick*="update"]
+{opacity: 1;
+transition: .5s;}
+
+.fancy-bg
+{background: none !important;}
