@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+
+*
+{text-decoration: none !important;
+font-weight: normal;}
+
+::-webkit-scrollbar
+{width: 5px;
+background: #e2e2e2;}
+::-webkit-scrollbar-thumb
+{background-color: #32d8de;}
+
+::-moz-selection
+{color: #673bca;
+background: #32d8de;
+text-shadow: none;}
+::selection
+{color: #32d8de;
+background: #673bca;
+text-shadow: none;}
+
+body
+{background: #eee url(https://dl.dropboxusercontent.com/s/8b9fwrhej013css/bg.png) repeat fixed;}
+
+#list_surround
+{font-family: Inconsolata, Meiryo;
+text-transform: lowercase;
+font-size: 9pt;
+position: fixed;
+width: 550px;
+height: 90% !important;
+margin: auto;
+left: 0%;
+right: calc( 0% - 130px );
+top: 0;
+bottom: 0;
+background: #eee;
+overflow-y: scroll;
+color: #666;}
+
+#list_surround a
+{color: #00c4cb;
+text-shadow: 1px 1px 0px #fff;
+transition: .7s;}
+
+#list_surround br, #search, #mal_cs_powered a, a[href^="/sharedmanga"], a[href^="/history"], #mal_cs_otherlinks a[href^="/animelist"], .hide, a[title="View More Information"]
+{display: none !important;}
+
+td[class^="status_"] a, #mal_control_strip a, a.table_headerLink
+{font-family: Inconsolata !important;
+text-transform: uppercase !important;
+font-size: 7pt !important;}
+
+td[class^="status"] a, #mal_control_strip a, a.table_headerLink
+{display: block;
+position: fixed;
+width: 110px;
+height: 20px;
+line-height: 20px;
+box-sizing: border-box;
+background: #eee !important;
+color: #673bca !important;
+margin: auto;
+left: calc( 0% - 560px );
+right: 0%;
+text-align: left;
+text-indent: 3px;
+transition: .8s;
+z-index: 5;
+text-shadow: none !important;}
+
+.status_selected a:before
+{content: "\25B6 ";
+font-size: 8pt !important;
+padding-right: 3px;
+font-family: Arial Unicode MS, Code2000, DejaVu Sans, Dingbats, EversonMono, FreeSerif, GNU Unifont, Quivira, Segoe UI Symbol, Symbola;}
+
+td[class^="status"] a:hover, #mal_control_strip a:hover, a.table_headerLink:hover
+{color: #fff !important;
+background: #673bca !important;}
+
+td[class^="status"]:first-of-type a
+{top: calc( 5% + 180px );
+font-size: 0pt !important;}
+td[class^="status"]:first-of-type a:after
+{/*content: "reading";*/
+font-size: 7pt !important;}
+
+td[class^="status"]:nth-of-type(2) a
+{top: calc( 5% + 200px );}
+
+td[class^="status"]:nth-of-type(3) a
+{top: calc( 5% + 220px );}
+
+td[class^="status"]:nth-of-type(4) a
+{top: calc( 5% + 240px );}
+
+td[class^="status"]:nth-of-type(5) a
+{top: calc( 5% + 260px );}
+
+td[class^="status"]:last-of-type a
+{top: calc( 5% + 280px );
+font-size: 0pt !important;}
+td[class^="status"]:last-of-type a:after
+{content: "show all";
+font-size: 7pt !important;}
+
+#mal_cs_powered
+{display: block;
+background: #eee !important;
+height: 90% !important;
+width: 120px;
+position: fixed !important;
+margin: auto;
+right: 0% !important;
+left: calc( 0% - 560px ) !important;
+top: 0 !important;
+bottom: 0;}
+
+#mal_cs_powered:before
+{content: "menu";
+top: calc( 5% + 420px ) !important;}
+
+#mal_cs_powered:after
+{/*content: "nymphiae";*/
+display: inline-block;
+padding: 0 5px 0 5px;
+box-sizing: border-box;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+top: calc( 5% + 5px ) !important;}
+
+td[class^="status"]:first-of-type:before
+{content: "category";
+top: calc( 5% + 150px ) !important;}
+
+.table_header:first-of-type:before
+{content: "sort";
+top: calc( 5% + 305px ) !important;}
+
+#mal_cs_powered:before, #mal_cs_powered:after, td[class^="status"]:first-of-type:before, .table_header:first-of-type:before
+{display: block;
+background: #673bca !important;
+color: #fff;
+height: 25px !important;
+line-height: 25px;
+width: 110px;
+position: fixed !important;
+margin: auto;
+right: 0% !important;
+left: calc( 0% - 560px ) !important;
+font-family: Inconsolata;
+text-align: center;
+text-transform: uppercase;
+font-size: 8pt !important;}
+
+a[href="/register.php"]:before
+{content: "register";
+font-size: 7pt !important;}
+
+#mal_cs_otherlinks a[href*=profile]
+{width: 110px !important;
+height: 25px !important;
+background: transparent !important;
+color: transparent !important;
+font-size: 0pt !important;
+top: calc( 5% + 5px ) !important;}
+
+#mal_cs_listinfo a[href*=profile], a[href*=login]
+{top: calc( 5% + 450px );}
+
+#mal_cs_listinfo .logout, a[href="/register.php"]
+{top: calc( 5% + 470px );}
+
+#mal_cs_links a[href="/"], a[href="/forum/?topicid=515949"]
+{top: calc( 5% + 490px );}
+
+#mal_cs_links .List_LightBox
+{top: calc( 5% + 510px );}
+
+#mal_cs_links a[href*="/animelist"]
+{top: calc( 5% + 530px );}
+
+#mal_cs_links a[href*="/mangalist"]
+{top: calc( 5% + 550px );}
+
+a[onclick*="manga_updateChap"], a[onclick*="manga_updateVol"], a[title="Click to increase your watched ep number by one"]
+{float: right;
+font-size: 0pt;
+color: transparent;}
+
+a[onclick*="manga_updateChap"]:before, a[onclick*="manga_updateVol"]:before, a[title="Click to increase your watched ep number by one"]:before
+{content: "\271A";
+font-family: Arial Unicode MS, Code2000, DejaVu Sans, Dingbats, EversonMono, FreeSerif, GNU Unifont, Quivira, Segoe UI Symbol, Symbola;
+font-size: 9pt !important;
+color: #bbb !important;
+float: right;
+display: inline-block;
+position: relative;
+right: 3px;
+bottom: 0px;
+transition: .8s;
+line-height: 24px;}
+
+td[class^="td"]
+{height: 25px;
+line-height: 25px;
+transition: .8s;
+box-sizing: border-box;}
+
+td[class^="td"]:first-of-type
+{border-left: 5px solid #eee !important;}
+
+td[class^="td"]:last-of-type
+{border-right: 5px solid #eee !important;}
+
+div[style="float: right;"] small
+{font-size: 0pt;
+color: transparent;}
+
+div[style="float: right;"] small .List_LightBox
+{font-size: 7pt;
+color: transparent !important;
+text-shadow: none !important;
+transition: .8s;
+display: inline-block;
+margin-top: 1px;}
+
+tr:hover td[class^="td"]
+{background-color: #32d8de;
+color: #fff;}
+
+tr:hover td[class^="td"] a
+{color: #fff !important;
+text-shadow: 1px 1px 0px #00989d !important;}
+
+tr:hover a[onclick^="manga_updateChap"]:before, tr:hover a[onclick^="manga_updateVol"]:before, tr:hover a[title="Click to increase your watched ep number by one"]:before
+{color: #fff !important;}
+
+.animetitle
+{display: inline-block;
+vertical-align: top;
+margin: 1px 0 0 2px;
+max-width: 240px;
+height: 25px;
+line-height: 25px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;}
+
+.animetitle + small
+{padding-left: 3px;}
+
+#mal_control_strip
+{display: block !important;
+position: fixed !important;
+width: 300px !important;
+top: -300px !important;}
+
+#mal_cs_otherlinks
+{overflow: hidden !important;}
+
+#inlineContent
+{display: block !important;
+width: 10px;
+height: 10px;
+position: fixed;
+bottom: 10px;
+left: 10px;
+background-color: #673bca;
+cursor: help;}
+
+#inlineContent:after
+{display: block;
+content: "design and coding by nymphiae";
+position: fixed;
+bottom: 10px;
+height: 10px;
+width: 154px;
+color: white;
+left: 15px;
+text-align: center;
+background-color: #32d8de;
+font-family: Inconsolata !important;
+text-transform: uppercase !important;
+font-size: 7pt !important;
+visibility: hidden;}
+
+#inlineContent:hover:after
+{visibility: visible;}
+
+.header_title
+{height: 25px;
+line-height: 25px;
+background-color: #32d8de;
+color: #fff;
+border: 5px solid #eee;
+text-align: center;
+text-transform: uppercase;}
+
+.table_header
+{text-transform: uppercase;
+font-size: 8pt;}
+
+#copyright:after
+{display: block !important;
+position: fixed !important;
+height: 110px !important;
+width: 110px !important;
+margin: auto !important;
+right: 0% !important;
+left: calc( 0% - 560px ) !important;
+top: calc( 5% + 35px ) !important;
+content: "" !important;
+background: #eee url(https://dl.dropboxusercontent.com/s/odtdyci6j1v6nze/mukkun.png) !important;}
+
+#list_surround > table:nth-of-type(n+4) ~ .header_cw + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_completed + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_onhold + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_dropped + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_ptw + table
+{display: none;}
+
+.header_cw + table, .header_completed + table, .header_onhold + table, .header_dropped + table, .header_ptw + table
+{position: fixed;
+display: block;
+left: 0;
+top: -50px;}
+
+.table_header:first-of-type
+{font-size: 0pt;}
+
+.table_header:nth-of-type(2) a
+{top: calc( 5% + 335px );}
+
+.table_header:nth-of-type(3) a
+{top: calc( 5% + 355px );}
+
+.table_header:nth-of-type(4) a
+{top: calc( 5% + 375px );}
+
+.table_header:nth-of-type(5) a
+{top: calc( 5% + 395px );}
+
+#mal_control_strip a[href="/register.php"]
+{font-size: 0pt !important;}
+
+.category_totals
+{border-top: 5px solid #eee;
+border-left: 5px solid #eee;
+border-right: 5px solid #eee;
+background: #e2e2e2;
+color: #0cbfc5;
+text-align: center;
+text-shadow: 1px 1px 0px #fff}
+
+#grand_totals
+{background: #32d8de;
+border: 5px solid #eee;
+text-align: center;
+color: #fff;
+height: 25px;
+line-height: 25px;}
+
+#copyright
+{color: #aaa;
+margin-bottom: 5px;
+margin-top: 5px; !important;}
