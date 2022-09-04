@@ -12,8 +12,7 @@
  --------------------------------------------------------------------------------
  */
  
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Satisfy);
+@\import "https://fonts.googleapis.com/css?family=Roboto|Satisfy";
 
 @font-face {
     font-family: 'DejaVu Sans';
@@ -313,6 +312,9 @@ transform: rotate(45deg);}
 #copyright
 {color: #ff8400;
 margin-bottom: 10px;}
+#recaptcha-terms {
+	display: none;
+}
 
 #copyright:after
 {display: block;
