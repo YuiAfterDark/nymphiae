@@ -18,3 +18,9 @@ Forum thread: https://myanimelist.net/forum/?topicid=1370768
 ✖ background: couldn't track the source;
 ✖ fonts: Arimo (google fonts);
 ✖ side icon(s): meteora94@deviantArt;
+
+### a k a
+
+- Layout 03
+- window
+- window style
