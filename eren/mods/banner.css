@@ -1,0 +1,18 @@
+/* Custom Banner */
+
+body {
+	--height: 300px;
+}
+
+#list_surround {
+	padding-top: var(--height);
+}
+
+#list_surround {
+	background-image: none;
+}
+
+body::before {
+	height: var(--height);
+	background: url(https://dl.dropboxusercontent.com/s/vs1qtohvi2skijo/eren.png) center top / cover no-repeat #fff;
+}
