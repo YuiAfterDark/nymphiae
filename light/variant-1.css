@@ -1,0 +1,340 @@
+/*
+ --------------------------------------------------------------------------------
+  ___ _  _ ___ ___  ___  _   _ ___   _   ___ ___   _____ _  _ ___ __  __ ___ ___ 
+ / __| || |_ _| _ \/ _ \| | | / __| /_\ / __|_ _| |_   _| || | __|  \/  | __/ __|
+ \__ \ __ || ||   / (_) | |_| \__ \/ _ \ (_ || |    | | | __ | _|| |\/| | _|\__ \
+ |___/_||_|___|_|_\\___/ \___/|___/_/ \_\___|___|   |_| |_||_|___|_|  |_|___|___/
+                                                                                 
+ - ♤ LAYOUT NO.6; VARIANT ONE. --------------------------------------------------
+ -- ♤ DESIGN AND CODING BY NYMPHIAE (SHIROUSAGITHEMES). -------------------------
+ --- ♤ ICON FROM "NISEKOI" BD SCREENSHOT, EDITED BY ME. -------------------------
+ ---- ♤ FONTS: ROBOTO, SATISFY, DEJAVU SANS. ------------------------------------
+ --------------------------------------------------------------------------------
+ */
+ 
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+
+@font-face {
+    font-family: 'DejaVu Sans';
+    src: url('https://dl.dropboxusercontent.com/u/188037746/Fonts/DejaVuSans.eot');
+    src: url('https://dl.dropboxusercontent.com/u/188037746/Fonts/DejaVuSans.eot?#iefix') format('embedded-opentype'),
+         url('https://dl.dropboxusercontent.com/u/188037746/Fonts/DejaVuSans.woff') format('woff'),
+         url('https://dl.dropboxusercontent.com/u/188037746/Fonts/DejaVuSans.ttf') format('truetype'),
+         url('https://dl.dropboxusercontent.com/u/188037746/Fonts/DejaVuSans.svg#dejavu_sans') format('svg');
+}
+
+*
+{text-transform: lowercase;
+font-weight: normal;
+text-decoration: none;}
+
+body
+{font-family: Roboto, Verdana, Arial, DejaVu Sans;
+font-size: 9pt;
+color: #777;
+cursor: default;
+background: #fff;}
+
+a
+{color: #555;
+cursor: pointer;
+transition: .45s;}
+
+tr:hover td[class^="td"]:not(.borderRBL)
+{color: #222;}
+tr:hover td[class^="td"]:not(.borderRBL) a
+{color: #77dcf2;}
+tr:hover .animetitle
+{letter-spacing: 0.05em;}
+
+#mal_cs_otherlinks:before
+{display: block;
+content: "";
+box-sizing: border-box;
+position: fixed;
+top: calc(50% - 115px);
+left: calc((((100% - 630px)/2) - 150px)/2);
+width: 150px;
+height: 150px;
+border: 1px solid #ccc;
+background-color: #ffffff;
+z-index: 5;}
+
+#copyright:before
+{display: block;
+content: "";
+width: 120px;
+height: 120px;
+position: fixed;
+top: calc(50% - 115px);
+left: calc((((100% - 630px)/2) - 150px)/2);
+margin: 15px;
+background-image: url(https://dl.dropboxusercontent.com/s/owo8qhizz1xhbcz/chitoge.png);
+background-size: cover;
+z-index: 10 !important;}
+
+#list_surround
+{width: 600px;
+position: absolute;
+left: 0;
+right: 0;
+margin: auto;}
+
+.header_title
+{font-family: Satisfy;
+font-size: 15pt;
+text-align: center;
+color: #77dcf2;
+padding: 15px;}
+
+.td1, .td2, .table_header, .category_totals
+{height: 20px;
+line-height: 20px;
+padding: none !important;
+transition: .45s;}
+
+td[class^="status_"] a
+{display: block;
+width: 150px;
+left: calc((((100% - 630px)/2) - 150px)/2);
+height: 16px;
+line-height: 16px;
+position: fixed;
+border-bottom: 1px solid #ccc;
+text-align: center;
+padding: 0 2px 0 2px;
+box-sizing: border-box;
+letter-spacing: -0.05em;
+transition: all .45s ease;}
+
+td[class^="status_"] a:hover
+{letter-spacing: 0.05em;
+color: #77dcf2;}
+
+td[class^="status_"]:first-of-type a
+{top: calc(50% + 48px);}
+
+td[class^="status_"]:nth-of-type(2) a
+{top: calc(50% + 64px);}
+
+td[class^="status_"]:nth-of-type(3) a
+{top: calc(50% + 80px);}
+
+td[class^="status_"]:nth-of-type(4) a
+{top: calc(50% + 96px);}
+
+td[class^="status_"]:nth-of-type(5) a
+{top: calc(50% + 112px);}
+
+td[class^="status_"]:last-of-type a
+{top: calc(50% + 128px);
+border-bottom: none;}
+
+.table_header, .category_totals
+{opacity: 0.75;}
+
+.category_totals
+{text-align: center;
+letter-spacing: -0.05em;}
+
+a[title="Click to increase your watched ep number by one"]
+{opacity: 0;
+transition: .45s;
+display: block;
+position: absolute;
+right: 0px;
+margin-top: -20px;}
+tr:hover a[title="Click to increase your watched ep number by one"]
+{opacity: 1;}
+
+div[style="float: right;"]
+{opacity: 0;
+font-size: 0pt;
+color: transparent;
+transition: .45s;
+margin-top: 6px;
+vertical-align: top;
+white-space: nowrap;
+height: 10px;
+width: 20px;}
+
+tr:hover div[style="float: right;"]
+{opacity: 1;}
+
+td[class^="td"] .List_LightBox, td[class^="td"] a[href*="edit"], a[title="View More Information"]
+{font-size: 0px !important;
+display: inline-block;
+height: 8px !important;
+width: 8px !important;
+cursor: help;
+background-color: #777;
+background-image: url(https://dl.dropboxusercontent.com/s/4iysss9ukkvxg4j/aem.png);
+transition: .45s;}
+
+td[class^="td"] .List_LightBox:hover, td[class^="td"] a[href*="edit"]:hover, a[title="View More Information"]:hover
+{background-color: #77dcf2;}
+
+td[class^="td"] .List_LightBox
+{background-position: left top;}
+
+td[class^="td"] a[href*="edit"]
+{background-position: 16px top;}
+
+a[title="View More Information"]
+{background-position: 8px top;
+margin-left: 3px;}
+
+.borderRBL
+{line-height: 9pt !important;
+background-color: #e5fbff;
+color: #3079c2;
+padding: 0 10px 10px 10px;
+border: 10px solid #fff !important;
+font-size: 7pt;}
+
+.borderRBL a
+{color: #ff8400;
+text-shadow: 1px 1px 0px #fff;}
+
+.borderRBL a[href*="id="]
+{border-bottom: 1px dotted #3079c2;}
+
+.borderRBL br
+{display: block !important;}
+
+.borderRBL:before
+{content: "";
+display: block;
+height: 12px;
+width: 12px;
+position: relative;
+top: -6px;
+left: 10px;
+background-color: #e5fbff;
+transform: rotate(45deg);}
+
+#mal_cs_listinfo a[href*="profile"], #mal_cs_listinfo a[onclick="$(this).parent().submit();"], #mal_cs_links .List_LightBox, #mal_cs_links a[href="/"],
+#mal_cs_otherlinks a[href="/login.php"], #mal_cs_otherlinks a[href="/register.php"], #mal_cs_otherlinks a[href="/forum/?topicid=515949"], #mal_cs_pic a
+{display: block;
+position: fixed;
+height: 16px;
+width: 16px;
+background-color: #777 !important;
+font-size: 0pt !important;
+top: calc(50% - 146px);
+transition: .45s;}
+
+#mal_cs_listinfo a[href*="profile"], #mal_cs_listinfo a[onclick="$(this).parent().submit();"], #mal_cs_links .List_LightBox, #mal_cs_links a[href="/"]
+{background-image: url(https://dl.dropboxusercontent.com/s/mrh1bg18mce7ffn/inbtns.png) !important;}
+
+#mal_cs_otherlinks a[href="/login.php"], #mal_cs_otherlinks a[href="/register.php"], #mal_cs_otherlinks a[href="/forum/?topicid=515949"], #mal_cs_pic a
+{background-image: url(https://dl.dropboxusercontent.com/s/7gky5ssgk9w91lf/outbtns.png) !important;}
+
+#mal_cs_listinfo a[href*="profile"]:hover, #mal_cs_listinfo a[onclick="$(this).parent().submit();"]:hover, #mal_cs_links .List_LightBox:hover, #mal_cs_links a[href="/"]:hover,
+#mal_cs_otherlinks a[href="/login.php"]:hover, #mal_cs_otherlinks a[href="/register.php"]:hover, #mal_cs_otherlinks a[href="/forum/?topicid=515949"]:hover, #mal_cs_pic a:hover
+{background-color: #77dcf2 !important;}
+
+#mal_cs_listinfo a[href*="profile"], #mal_cs_otherlinks a[href="/register.php"]
+{left: calc((((100% - 630px)/2) - 150px)/2 + 77px);
+background-position: 32px top;}
+
+#mal_cs_listinfo a[onclick="$(this).parent().submit();"], #mal_cs_otherlinks a[href="/forum/?topicid=515949"]
+{left: calc((((100% - 630px)/2) - 150px)/2 + 97px);
+background-position: 16px top;}
+
+#mal_cs_links .List_LightBox, #mal_cs_pic a
+{left: calc((((100% - 630px)/2) - 150px)/2 + 37px);
+background-position: left top;}
+
+#mal_cs_links a[href="/"], #mal_cs_otherlinks a[href="/login.php"]
+{left: calc((((100% - 630px)/2) - 150px)/2 + 57px);
+background-position: -16px top;}
+
+#mal_control_strip
+{position: fixed;
+top: -100px !important;}
+
+#list_surround br, #mal_cs_pic img
+{display: none;}
+
+.animetitle
+{display: inline-block !important;
+vertical-align: top;
+height: 20px;
+line-height: 20px;
+max-width: 335px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+letter-spacing: 0em;
+transition: .45s;}
+
+.animetitle + small
+{color: #ff8400;
+font-size: 7pt;
+height: 20px;
+display: inline-block !important;
+vertical-align: top;
+line-height: 21px;}
+
+@-moz-document url-prefix() {
+    .animetitle + small {
+        line-height: 23px;
+    }
+}
+
+.animetitle + small:before
+{content: "[ ";}
+
+.animetitle + small:after
+{content: " ]";}
+
+#grand_totals
+{display: block;
+background-color: #e5fbff;
+color: #3079c2;
+padding: 0 13px 13px 13px;
+text-align: center;
+letter-spacing: -0.05em;
+margin-top: 15px;}
+
+#grand_totals:before
+{content: "";
+display: block;
+height: 12px;
+width: 12px;
+position: relative;
+top: -6px;
+left: 281px;
+background-color: #e5fbff;
+transform: rotate(45deg);}
+
+#copyright
+{color: #ff8400;
+margin-bottom: 10px;}
+
+#copyright:after
+{display: block;
+content: "design and coding by nymphiae";
+color: #ff8400;
+margin-bottom: 15px;}
+
+::-webkit-scrollbar
+{width: 6px;
+background-color: #caf7ff;}
+::-webkit-scrollbar-thumb
+{background-color: #77dcf2;
+border-radius: 4px;}
+
+::-moz-selection
+{color: #3079c2;
+background-color: #ffbc74;
+text-shadow: none;}
+::selection
+{color: #3079c2;
+background-color: #ffbc74;
+text-shadow: none;}
+
+/* More customisation */
+#list_surround {top: 40px}
