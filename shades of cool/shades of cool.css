@@ -1,7 +1,6 @@
 /* design and coding by nymphiae@mal~shirousagithemes@tumblr */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Lobster);
+@\import "https://fonts.googleapis.com/css?family=Roboto|Lobster";
 
 a
 {text-decoration: none;
