@@ -1,0 +1,334 @@
+
+ /* -----------------------------------------------------------------------------
+  ___ _  _ ___ ___  ___  _   _ ___   _   ___ ___ _____ _  _ ___ __  __ ___ ___
+ / __| || |_ _| _ \/ _ \| | | / __| /_\ / __|_ _|_   _| || | __|  \/  | __/ __|
+ \__ \ __ || ||   / (_) | |_| \__ \/ _ \ (_ || |  | | | __ | _|| |\/| | _|\__ \
+ |___/_||_|___|_|_\\___/ \___/|___/_/ \_\___|___| |_| |_||_|___|_|  |_|___|___/
+ 
+ ----------------------------------------------------------------------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT);
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700);
+
+/*
+ _  _   _   ___ _  ____   ___   _ _   _ _ _ 
+| || | /_\ |_ _| |/ /\ \ / / | | | | | | | |
+| __ |/ _ \ | || ' <  \ V /| |_| | |_| |_|_|
+|_||_/_/ \_\___|_|\_\  |_|  \___/ \___/(_|_)
+ ___ _   _  ___   ___      ___   ___    _     _  _____  _   _ ___ _  _ ___ 
+/ __| | | |/ __| /_\ \    / /_\ | _ \  /_\   | |/ / _ \| | | / __| || |_ _|
+\__ \ |_| | (_ |/ _ \ \/\/ / _ \|   / / _ \  | ' < (_) | |_| \__ \ __ || | 
+|___/\___/ \___/_/ \_\_/\_/_/ \_\_|_\/_/ \_\ |_|\_\___/ \___/|___/_||_|___|
+
+CODED BY NYMPHIAE (SHIROUSAGITHEMES@TUMBLR).
+
+CREDITS/RESOURCES:
+△ SIDEBAR IMAGE ~ ART BY SAITO YUKIHIRO (https://www.pixiv.net/member.php?id=2428726), EDITED BY ME.
+△ CODING AND DESIGN ME.
+*/
+
+#mal_control_strip
+{display: block !important;
+width: 380px !important;
+height: 100% !important;
+position: fixed !important;
+left: 0px !important;
+top: 0px !important;
+transition: 0.6s !important;
+background-image: url(https://dl.dropboxusercontent.com/s/ptu7vb3kkv3ysat/koushi.png) !important;
+background-color: #141414 !important;}
+
+strong, b
+{font-weight: normal !important;}
+
+#mal_cs_links, #mal_cs_pic
+{display: block !important;
+z-index: 1 !important;
+width: 206px !important;
+height: 78px !important;
+position: fixed !important;
+top: 376px !important;
+left: 86px !important;
+background: transparent !important;
+padding: 0 !important;
+border: 1px solid rgba(0,0,0,0.4) !important;}
+
+#mal_cs_pic::before
+{display: block;
+content: "";
+width: 200px;
+height: 72px;
+left: 90px;
+position: fixed;
+background-color: black;
+opacity: 0.4;
+transition: 0.6s;}
+
+#mal_cs_pic::before
+{top: 380px;}
+
+#mal_control_strip a, #mal_control_strip strong a
+{color: white !important;
+font-weight: normal !important;
+text-decoration: none !important;
+font-family: Old Standard TT !important;
+font-size: 8px !important;
+font-style: italic !important;
+text-transform: uppercase !important;
+text-align: center;
+background: black !important;
+width: 200px !important;
+display: block !important;
+position: fixed !important;
+left: 90px !important;
+padding: 0 !important;
+border: 0 !important;
+height: 12px !important;
+z-index: 50 !important;}
+#mal_control_strip a
+{transition: 0.45s !important;
+opacity: 0.4;
+letter-spacing: 1px !important;}
+#mal_control_strip a:hover
+{letter-spacing: 3px !important;
+transition: 0.6s !important;}
+
+#mal_cs_powered,
+#mal_cs_otherlinks a[href*="/profile/"],
+#mal_cs_otherlinks a[href*="/history/"],
+#mal_cs_otherlinks a[href*="/mangalist/"],
+#mal_cs_otherlinks a[href*="/animelist/"],
+#mal_cs_otherlinks a[href*="/shared"],
+#mal_cs_otherlinks a[href$="export"],
+#mal_cs_otherlinks a[href$="forum/"],
+#mal_cs_otherlinks div:first-of-type
+{display: none !important;}
+
+#mal_cs_listinfo
+{border: 0 !important;}
+
+#mal_cs_otherlinks div:last-of-type
+{font-size: 0px !important;
+color: transparent !important;}
+
+#mal_cs_listinfo a[href*="/profile/"]
+{top: 380px;}
+#mal_cs_links a[href="/"]
+{top: 392px;}
+#mal_cs_listinfo a[onclick="$(this).parent().submit();"]
+{top: 404px;}
+#mal_cs_links a[href*="/animelist/"]
+{top: 416px;}
+#mal_cs_links a[href*="/mangalist/"]
+{top: 428px;}
+#mal_cs_links a.List_LightBox
+{top: 440px;}
+#mal_cs_otherlinks a[href="/login.php"]
+{top: 389px;
+background: transparent !important;}
+#mal_cs_otherlinks a[href="/register.php"]
+{top: 410px;
+background: transparent !important;}
+#mal_cs_otherlinks a[href="/forum/?topicid=515949"]
+{top: 431px;
+background: transparent !important;}
+
+#mal_control_strip:hover a
+{opacity: 0.7;}
+#mal_control_strip:hover #mal_cs_links, #mal_control_strip:hover #mal_cs_pic
+{border: 1px solid rgba(0,0,0,0.6) !important;}
+#mal_control_strip:hover #mal_cs_pic::before, #mal_control_strip:hover #mal_cs_pic::after
+{opacity: 0.7 !important;}
+
+#mal_control_strip::before
+{content: "koushi sugawara;" !important;
+position: fixed !important;
+top: 330px !important;
+left: 90px !important;
+width: 200px !important;
+display: block !important;
+font-family: Old Standard TT !important;
+font-size: 30px !important;
+font-style: italic !important;
+text-transform: uppercase !important;
+color: #141414 !important;
+line-height: 23px !important;
+text-align: center !important;
+font-weight: bold !important;
+text-shadow: 1px 1px 0 #fff !important;
+opacity: 0.7 !important;
+cursor: default !important;}
+
+#mal_cs_pic a
+{display:none !important;}
+
+
+
+/*
+
+
+
+*/
+
+body
+{background: #141414;
+font-family: Karla;
+color: #898989;
+font-size: 12px;
+width: calc(100% - 380px);
+float: right;}
+
+.td1, .td2, .category_totals, .table_header, #grand_totals
+{height: 22px;
+line-height: 22px;}
+
+a
+{text-decoration: none;
+color: #898989;}
+
+#list_surround
+{position: relative;
+width: 750px;
+right: 0;
+left: 0;
+margin: auto;}
+
+.header_title
+{font-family: Old Standard TT;
+font-size: 30px;
+font-style: italic;
+text-transform: uppercase;
+color: #ccc;
+text-align: center;
+border-left: 1px solid #333;
+border-right: 1px solid #333;
+border-top: 5px solid #333;
+margin-top: 20px;}
+
+#copyright
+{margin: 0;
+font-size: 9px;
+text-transform: uppercase;
+font-weight: 700;}
+
+#copyright::after
+{content: "";
+position: fixed;
+bottom: 10px;
+right: 10px;
+display: block;
+width: 52px;
+height: 23px;
+background-image: url(https://dl.dropboxusercontent.com/s/1wjxl7tc9c3x04s/copyright.png);
+/* DO NOT REMOVE THIS PART OF THE CODE. THANK YOU. */}
+
+.category_totals
+{border-left: 1px solid #333;
+border-right: 1px solid #333;
+border-bottom: 5px solid #333;
+text-align: center;
+padding-top: 3px;}
+
+tr td[class^="td"], tr td[class^="td"] a, tr td div
+{transition: 0.8s;}
+
+tr:hover td[class^="td"]:not(.borderRBL), tr:hover td[class^="td"] a
+{font-style: italic;
+color: #ccc;}
+
+.td1:first-of-type, .td2:first-of-type, .table_header:first-of-type
+{border-left: 1px solid #333;}
+.td1:last-of-type, .td2:last-of-type, .table_header:last-of-type
+{border-right: 1px solid #333;}
+
+#list_surround br
+{display: none;}
+
+td br
+{display: block !important;}
+
+td[class^="td"] div[style="float: right;"]
+{opacity: 0;}
+
+tr:hover td[class^="td"] div[style="float: right;"]
+{opacity: 1;}
+
+td[class^="td"] a[title="Click to increase your watched ep number by one"]
+{float: right;
+font-size: 14px;
+padding-right: 10px;}
+
+.animetitle + small
+{color: #b5b5b5;
+transition: 0.8s;}
+
+tr:hover .animetitle + small
+{color: #898989;}
+
+.status_selected a, .status_not_selected a
+{top: 459px !important;
+background-color: black;
+z-index: 50;
+position: fixed;
+width: 19px;
+height: 19px;
+font-size: 0px !important;
+color: transparent !important;
+opacity: 0.4;
+transition: 0.8s;
+-webkit-transform-style: preserve-3d;
+background-image: url(https://dl.dropboxusercontent.com/s/1n48nm3ym4xy4ln/icons.png);}
+
+.status_selected:first-of-type a, .status_not_selected:first-of-type a
+{left: 125px;
+background-position: 0 0;}
+.status_selected:nth-of-type(2) a, .status_not_selected:nth-of-type(2) a
+{left: 147px;
+background-position: -19px 0;}
+.status_selected:nth-of-type(3) a, .status_not_selected:nth-of-type(3) a
+{left: 169px;
+background-position: -38px 0;}
+.status_selected:nth-of-type(4) a, .status_not_selected:nth-of-type(4) a
+{left: 191px;
+background-position: -57px 0;}
+.status_selected:nth-of-type(5) a, .status_not_selected:nth-of-type(5) a
+{left: 213px;
+background-position: -76px 0;}
+.status_selected:last-of-type a, .status_not_selected:last-of-type a
+{left: 235px;
+background-position: -95px 0;}
+
+.status_selected a:hover, .status_not_selected a:hover
+{opacity: 0.7;}
+
+.borderRBL
+{padding: 8px 15px;
+line-height: 12px;
+font-size: 9px;
+text-transform: uppercase;
+font-weight: 700;}
+
+#grand_totals
+{border: 4px solid #333;
+text-align: center;
+margin: 20px 0;}
+
+::-moz-selection
+{color: black;
+background: #7abe7e;}
+::selection
+{color: black;
+background: #7abe7e;}
+
+::-webkit-scrollbar
+{width: 9px;
+background: transparent url(https://dl.dropboxusercontent.com/s/0rljosp503vxybw/px.png) repeat-y center;}
+::-webkit-scrollbar-thumb
+{background-color: #333333;
+border: 3px solid #141414;}
+::-webkit-scrollbar-thumb:hover
+{background-color: #555;}
+
+/* more customisation */
+body{padding-top: 30px;}
+header {position: fixed;top:0; left: 0;height: 30px;line-height: 30px;background: linear-gradient(to right, #f580a6 0%,#c33886 100%);width: 100%;box-sizing: border-box;padding: 0px 15px;color:#fff;z-index:1;font-family: montserrat;font-size:12px;text-transform:uppercase; letter-spacing:2px;font-weight:700;box-shadow: 0px 10px 0px 0px rgba(255,255,255,.5);}
