@@ -10,10 +10,10 @@
  --- ♤ GIF FROM "KOSÉ ESPRIQUE" CM FEATURING NAMIE AMURO. -----------------------
  ---- ♤ FONTS: ROBOTO, SATISFY, DEJAVU SANS. ------------------------------------
  --------------------------------------------------------------------------------
+ update 2022-sep-04 by Valerio Lyndon
  */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Satisfy);
+@\import "https://fonts.googleapis.com/css?family=Roboto|Satisfy";
 
 @font-face {
     font-family: 'DejaVu Sans';
@@ -358,6 +358,9 @@ transform: rotate(45deg);}
 #copyright
 {color: #f6b0cf;
 margin-bottom: 10px;}
+#recaptcha-terms {
+	display: none;
+}
 
 #copyright:after
 {display: block;
