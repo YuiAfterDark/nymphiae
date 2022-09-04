@@ -13,6 +13,7 @@ credits/resources;
 window idea ~ various tumblr themes.
 sidebar image ~ original: https://www.pixiv.net/member_illust.php?mode=manga&illust_id=36355942; edit: https://lovemiki.deviantart.com/art/02-Umbrella-434317173
 background image ~ couldn't track down the source.)
+last updated 2022-sep-04 by Valerio Lyndon
 */
 
 ::-webkit-scrollbar
@@ -178,10 +179,10 @@ font-size: 8px !important;}
 {display: block;
 position: fixed;
 bottom: 103px;
-width: 375px;
+width: 395px;
 height: 16px;
 line-height: 16px;
-left: calc(0% - 19px);
+left: 1px;
 right: 0%;
 margin: auto;
 text-transform: uppercase;
@@ -191,7 +192,11 @@ background-color: #dfdfdf;
 color: #6f6f6f;
 border-top-right-radius: 4px;
 text-indent: 3px;
-cursor: default;}
+cursor: default;
+white-space: nowrap;}
+#recaptcha-terms {
+	display: none;
+}
 
 div[style="float: right;"]
 {opacity: 0;
