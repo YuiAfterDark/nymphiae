@@ -1,4 +1,5 @@
 /* design and coding by nymphiae@mal~shirousagithemes@tumblr */
+/* last updated 2022-sep-04 by Valerio Lyndon */
 
 @\import "https://fonts.googleapis.com/css?family=Roboto|Lobster";
 
@@ -44,9 +45,10 @@ color: transparent !important;}
 {background-position: center -150px ;
 transition: 0.8s;}
 
-#copyright
+#copyright, #recaptcha-terms
 {font-size: 9px;
-margin-bottom: 5px;}
+margin-bottom: 5px;
+text-align: center;}
 
 #copyright::after
 {display: block;
@@ -151,6 +153,9 @@ transition: 0.8s;}
 .status_selected:first-of-type a::after, .status_not_selected:first-of-type a::after
 {left: 118px;
 background-image: url("https://dl.dropboxusercontent.com/s/f89qmmmwldpmf9b/watching.png");}
+[data-work="manga"] [class^="status_"]:first-of-type a::after {
+	background-image: url(https://i.imgur.com/R1vpm33.png);
+}
 .status_selected:nth-of-type(2) a::after, .status_not_selected:nth-of-type(2) a::after
 {left: 135px;
 background-image: url("https://dl.dropboxusercontent.com/s/oyc5sk34yuly035/completed.png");}
