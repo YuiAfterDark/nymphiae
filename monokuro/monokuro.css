@@ -11,7 +11,8 @@
  ---- ☂ ORIGINALLY INSPIRED BY UDONYA@TUMBLR ------------------------------------
  ----------------------------------------------------------------------------- */
 
-/* Modified by Valerio Lyndon 2022-aug-13 */
+/* Modified by Valerio Lyndon */
+/* Last modified: 2023-Apr-12 */
 
 @\import "https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700";
 
@@ -38,7 +39,7 @@ text-decoration: none !important;}
 body
 {font-size: 11pt;
 color: #000;
-background: #000 url(https://dl.dropboxusercontent.com/s/j5wr3jtlei4jiw8/bg-trans-100.png) repeat fixed center;}
+background: url(https://dl.dropboxusercontent.com/s/j5wr3jtlei4jiw8/bg-trans-100.png) repeat fixed center #000 !important;}
 
 a
 {color: #000;

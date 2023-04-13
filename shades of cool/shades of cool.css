@@ -1,5 +1,6 @@
 /* design and coding by nymphiae@mal~shirousagithemes@tumblr */
-/* last updated 2022-sep-04 by Valerio Lyndon */
+/* Modified by Valerio Lyndon */
+/* Last modification: 2023-Apr-12 */
 
 @\import "https://fonts.googleapis.com/css?family=Roboto|Lobster";
 
@@ -10,7 +11,7 @@ color: #3271B3;}
 body
 {font-family: Roboto;
 font-size: 12px;
-background: #ccc url("https://dl.dropboxusercontent.com/s/avgdm8hu0gfhorm/wg-minimal-web-patterns-02.png") repeat left top;
+background: url("https://dl.dropboxusercontent.com/s/avgdm8hu0gfhorm/wg-minimal-web-patterns-02.png") repeat left top #ccc !important;
 color: #555;}
 
 *

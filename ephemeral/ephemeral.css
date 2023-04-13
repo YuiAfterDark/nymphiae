@@ -659,3 +659,7 @@ body [class^="fa"] {
 .status-menu-container .search-container #search-button {
 	top: 5px;
 }
+
+/* Pre-emptively fix background colour being overwritten */
+body
+{background-color: #fff !important;}

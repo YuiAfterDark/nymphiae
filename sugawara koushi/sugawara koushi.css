@@ -26,6 +26,9 @@ CREDITS/RESOURCES:
 △ CODING AND DESIGN ME.
 */
 
+/* Modified by Valerio Lyndon */
+/* Last modification: 2023-Apr-12 */
+
 #mal_control_strip
 {display: block !important;
 width: 380px !important;
@@ -170,7 +173,7 @@ cursor: default !important;}
 */
 
 body
-{background: #141414;
+{background: #141414 !important;
 font-family: Karla;
 color: #898989;
 font-size: 12px;

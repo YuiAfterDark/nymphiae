@@ -25,7 +25,7 @@ background: #673bca;
 text-shadow: none;}
 
 body
-{background: #eee url(https://dl.dropboxusercontent.com/s/8b9fwrhej013css/bg.png) repeat fixed;}
+{background: url(https://dl.dropboxusercontent.com/s/8b9fwrhej013css/bg.png) repeat fixed #eee !important;}
 
 #list_surround
 {font-family: Inconsolata, Meiryo;

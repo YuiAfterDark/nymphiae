@@ -12,12 +12,13 @@ __ __ || || / (_) | |_| __ / _ (_ || | | | | __ | _|| |/| | _|__
 --------------------------------------------------------------------------------
 */
 
-/* Modified by Valerio Lyndon 2022-aug-12 */
+/* Modified by Valerio Lyndon */
+/* Last modified: 2023-Apr-12 */
 
 @\import "https://fonts.googleapis.com/css?family=Raleway:400,300|Arimo:400,400italic,700,700italic";
 
 body
-{background: #f5f5f5;
+{background-color: #f5f5f5 !important;
 color: #404040;
 font-family: "Arimo", sans-serif;
 font-size: 10pt;

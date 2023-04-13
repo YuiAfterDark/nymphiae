@@ -33,7 +33,7 @@ body
 font-size: 9pt;
 color: #777;
 cursor: default;
-background: #fff;}
+background: #fff !important;}
 
 a
 {color: #555;

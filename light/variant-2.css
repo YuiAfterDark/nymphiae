@@ -34,7 +34,7 @@ body
 font-size: 9pt;
 color: #777;
 cursor: default;
-background: #ffe2f1;}
+background: #ffe2f1 !important;}
 
 a
 {color: #555;
