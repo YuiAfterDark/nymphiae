@@ -14,15 +14,6 @@
  
 @\import "https://fonts.googleapis.com/css?family=Roboto|Satisfy";
 
-@font-face {
-    font-family: 'DejaVu Sans';
-    src: url('https://dl.dropboxusercontent.com/u/188037746/Fonts/DejaVuSans.eot');
-    src: url('https://dl.dropboxusercontent.com/u/188037746/Fonts/DejaVuSans.eot?#iefix') format('embedded-opentype'),
-         url('https://dl.dropboxusercontent.com/u/188037746/Fonts/DejaVuSans.woff') format('woff'),
-         url('https://dl.dropboxusercontent.com/u/188037746/Fonts/DejaVuSans.ttf') format('truetype'),
-         url('https://dl.dropboxusercontent.com/u/188037746/Fonts/DejaVuSans.svg#dejavu_sans') format('svg');
-}
-
 *
 {text-transform: lowercase;
 font-weight: normal;
