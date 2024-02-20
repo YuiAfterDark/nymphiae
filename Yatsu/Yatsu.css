@@ -8,10 +8,12 @@
  -------------------------------------------------------------------------------- 
  ----------------------------------------------------------------------------- */
  
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
+
 body
 {background-attachment: fixed !important;
 background-color: #e4e893 !important;
-background-image: url(http://i.imgur.com/rTFNd5R.jpg) !important;
+background-image: url(https://i.imgur.com/rTFNd5R.jpg) !important;
 background-repeat: repeat !important;
 background-size: cover !important;
 color: #ffffff;
