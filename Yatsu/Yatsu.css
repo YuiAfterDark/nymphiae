@@ -1,0 +1,166 @@
+/* -----------------------------------------------------------------------------
+  ___ _  _ ___ ___  ___  _   _ ___   _   ___ ___ _____ _  _ ___ __  __ ___ ___
+ / __| || |_ _| _ \/ _ \| | | / __| /_\ / __|_ _|_   _| || | __|  \/  | __/ __|
+ \__ \ __ || ||   / (_) | |_| \__ \/ _ \ (_ || |  | | | __ | _|| |\/| | _|\__ \
+ |___/_||_|___|_|_\\___/ \___/|___/_/ \_\___|___| |_| |_||_|___|_|  |_|___|___/
+ --------------------------------------------------------------------------------
+ - requested by MissMousekewitz -------------------------------------------------
+ -------------------------------------------------------------------------------- 
+ ----------------------------------------------------------------------------- */
+ 
+body
+{background-attachment: fixed !important;
+background-color: #e4e893 !important;
+background-image: url(http://i.imgur.com/rTFNd5R.jpg) !important;
+background-repeat: repeat !important;
+background-size: cover !important;
+color: #ffffff;
+font-family: Verdana, Arial;
+font-size: 10px;}
+
+a
+{color: #7aa23f;
+text-decoration: none;}
+
+a:hover
+{color: #45631b;}
+
+small
+{color: #365300;
+font-size: 8px !important;
+text-decoration: none;}
+
+#searchBox
+{background-color: #e4e893;
+border: 1px solid #ffffff;
+color: #7aa23f;
+font-size: 14px !important;
+height: 14px;
+text-align: center;
+text-transform: uppercase;
+width: 150px !important;}
+
+#list_surround
+{position: absolute !important;
+right: 60px !important;
+background-color: transparent;
+background: transparent;
+background-position: center top;
+background-repeat: no-repeat;
+margin-left: 5px;
+padding-top: 50px;
+text-transform: none;
+width: 600px;}
+
+.td1, .td2
+{background: rgba(228, 232, 147, 0.8);
+color: #365300;
+padding: 3px;}
+
+.table_header
+{background: rgba(228, 232, 147, 0.8);
+color: #7ea04a !important;
+padding: 3px;}
+
+.td1[width="125"], .td2[width="125"]
+{padding: 1px 20px 1px 1px;
+width: 200px;}
+
+.td1[width="45"], .td1[width="70"], .td2[width="45"], .td2[width="70"]
+{font-weight: bold;}
+
+.table_header[width="125"]
+{padding-left: 1px;
+padding-right: 20px;
+width: 200px;}
+
+.td1:first-child, .td2:first-child, .table_header:first-child
+{padding-left: 10px;
+text-align: center;
+width: 20px;}
+
+[id^="menu"] .td1
+{padding-left: 50px;
+padding-right: 20px;
+text-align: left;}
+
+[id^="menu"] .td2
+{padding-left: 50px;
+padding-right: 20px;
+text-align: left;}
+
+small *, small
+{font-size: 10px;}
+
+.table_headerLink
+{color: #365300;
+font-weight: normal;}
+
+.table_headerLink:hover
+{color: #45631b;
+font-weight: normal;}
+
+td[class*="status_"]
+{font-family: Century Gothic,Verdana,Arial;
+font-weight: bold;
+padding: 5px;
+background: rgba(228, 232, 147, 0.8);
+border-top: 2px solid #ffffff !important;
+border-bottom: 2px solid #ffffff !important;}
+
+.status_selected
+{font-size: 14px;}
+
+.status_not_selected
+{font-size: 12px;}
+
+.header_title
+{font-size: 40px;
+font-family: century gothic;
+margin: -20px 0 10px 40px;}
+
+.header_cw, .header_completed, .header_onhold, .header_dropped, .header_ptw
+{margin-top: 25px;
+background: rgba(228, 232, 147, 0.8);
+border-radius: 30px 30px 0 0;}
+
+.category_totals
+{background: rgba(228, 232, 147, 0.8);
+color: #365300;
+height: 40px;
+text-align: center;
+border-radius: 0 0 30px 30px;}
+
+#grand_totals
+{color: #ffffff;
+font-family: Verdana,Arial;
+font-size: 10px;
+height: 25px;
+padding: 30px;
+text-align: center;}
+
+#copyright
+{color: #ffffff;
+font-size: 9px;
+height: 50px;}
+
+#mal\_control\_strip
+{background: rgba(228, 232, 147, 0.8) url(none) !important;
+border-bottom: 2px solid #ffffff !important;}
+
+#mal\_control\_strip, #mal\_control\_strip *
+{color: #7aa23f !important;
+font-size: 10px !important;
+font-weight: bold !important;}
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links
+{border-right: 1px solid #ffffff !important;}
+
+#searchListButton, #mal_cs_pic a img
+{display: none;}
+
+#mal_cs_pic a:before
+{content: "MyAnimeList";
+font-size: 22px !important;
+text-decoration: none !important;
+font-weight: bold;}
